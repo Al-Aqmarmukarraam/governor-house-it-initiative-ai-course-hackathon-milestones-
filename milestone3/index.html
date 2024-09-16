@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Resume Builder</title>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+  <div class="container">
+    <!-- Form Section -->
+    <section class="form-section">
+      <h2>Resume Builder Form</h2>
+      <form id="resume-form">
+        <!-- Profile Picture Upload -->
+        <div class="form-group">
+          <legend for="profile-picture">Profile Picture:</legend>
+          <input type="file" id="profile-picture" accept="image/*" required>
+        </div>
+        <!-- Personal Info -->
+        <div class="form-group">
+          <legend for="name">Full Name:</legend>
+          <input type="text" id="name" required>
+        </div>
+        <div class="form-group">
+          <legend for="email">Email:</legend>
+          <input type="email" id="email" required>
+        </div>
+        <div class="form-group">
+          <legend for="phone">Phone:</legend>
+          <input type="tel" id="phone" required>
+        </div>
+        <div class="form-group">
+          <legend for="education">Education:</legend>
+          <textarea id="education" rows="4" required></textarea>
+        </div>
+        <div class="form-group">
+          <legend for="skills">Skills:</legend>
+          <textarea id="skills" rows="3" required></textarea>
+        </div>
+        <div class="form-group">
+          <legend for="experience">Experience:</legend>
+          <textarea id="experience" rows="4" required></textarea>
+        </div>
+        <button type="submit">Generate Resume</button>
+      </form>
+    </section>
+
+    <!-- Resume Preview Section -->
+    <section class="resume-section">
+      <h2>Your Resume</h2>
+      <div id="resume-preview">
+        <!-- Profile Picture Preview -->
+        <img id="preview-profile-picture" alt="Profile Picture" class="profile-pic" src="">
+
+        <h4>Name</h4>
+        <p id="preview-name"></p>
+        <br>
+        <h4>Email Address</h4>
+        <p id="preview-email"></p>
+        <br>
+        <h4>Phone Number</h4>
+        <p id="preview-phone"></p>
+        <br>
+        <h4>Education</h4>
+        <p id="preview-education"></p>
+        <br>
+        <h4>Skills</h4>
+        <p id="preview-skills"></p>
+        <br>
+        <h4>Experience</h4>
+        <p id="preview-experience"></p>
+        <br>
+    </section>
+    <button id="ResumeOutput" type="button">Resume Output</button>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
