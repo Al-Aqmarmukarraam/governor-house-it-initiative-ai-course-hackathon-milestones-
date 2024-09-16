@@ -1,0 +1,96 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('background.webp') no-repeat center center fixed;
+    background-size: cover;
+    color: #01061c;
+    line-height: 1.6;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #1b6cb2;
+    border-radius: 10px;
+    box-shadow: 0 15px 25px rgba(1, 215, 253, 0.2);
+}
+
+/* Form Section */
+.form-section {
+    padding: 20px;
+    background-color: #47a3f8;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(199, 243, 116, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+h2 {
+    color: #23edbe;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #9ebcf8;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 12px 24px;
+    background-color: #012e5f;
+    color: rgb(5, 203, 137);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #85e9f6;
+    transform: scale(1.05);
+}
+
+/* Resume Preview Section */
+.resume-section {
+    padding: 20px;
+    background-color: #194a76e6;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(237, 167, 167, 0.1);
+}
+
+#resume-preview {
+    background-color: rgb(26, 126, 184);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(147, 90, 227, 0.05);
+    outline: none;
+}
+
+/* Profile Picture */
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 5px solid #4ab0f0;
+    object-fit: cover;
+    box-shadow: 0 5px 10px rgba(143, 249, 240, 0.1);
+}
